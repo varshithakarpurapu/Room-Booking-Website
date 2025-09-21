@@ -1,0 +1,815 @@
+body{
+ background-color: rgb(242, 221, 238);
+  width:100%;
+}
+.items-div{
+   
+    justify-content: center;
+}
+.nav-data{
+    font-size: 1rem;
+
+    display: block;
+    position:relative;
+    text-decoration:none;
+    padding:5px;
+   color:white;
+    font-family: sans-serif;
+    text-transform:uppercase;
+    transition:0.5s;
+
+}
+
+
+.nav-logo{
+    margin-right: 50px;
+    width:135px;
+}
+
+
+
+.nav-items{
+    margin-top:20px;
+  padding:0;
+  display:flex;
+  
+}
+
+
+.nav-item{
+  
+    list-style:none;
+  margin:0 20px;
+  transition:0.5s;
+}
+.mynav {
+  transition: background-color 0.3s ease;
+  height:70px;
+ 
+}
+
+.nav-data:hover{
+    
+  transition: 0.5s ease;
+  transform:scale(1.2);
+opacity:1;
+filter:blur(0);
+text-decoration:none;
+color:#fff;
+
+}
+.nav-data:before{
+  content:'';
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:#346fee;
+transition:0.5s;
+transform-origin:right;
+transform:scaleX(0);
+z-index:-1;
+border-radius: 15px;
+}
+.nav-data:hover:before{
+  transition:transform 0.5s;
+transform-origin:left;
+transform:scaleX(1);
+}
+.nav-tog{
+  position: fixed; /* Keeps it in the same position while scrolling */
+  top: 10px;       /* Distance from the top of the viewport */
+     /* Distance from the right of the viewport */
+  z-index: 1000;   /* Ensures it stays above other elements */
+  background-color: #fff; /* Optional styling */
+  border: none;    /* Optional styling */
+  padding: 10px;   /* Optional styling */
+  border-radius: 5px; /* Optional styling */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional styling */
+}
+
+.home-button{
+    margin-left: 20px;
+    
+    font-size: 1.1rem;
+    height:40px;
+    background-color:#346fee;
+    color:white;
+    border-radius: 5px;
+
+}
+.home-body{
+
+    background-image: url("header.jpg");
+    height:100vh;
+    position: relative;
+    width: 100%;
+  
+    background-size: cover;
+     overflow: hidden;
+        transition: background-image 1s ease-in-out;
+     
+      
+}
+
+.home-para{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height:80vh;
+    color:white;
+    animation: moveup 2s ease-in-out;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+.para1{
+  margin-top: 250px;
+    font-size: 1.4rem;
+   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h1{
+    font-size: 4rem;
+}
+.home-span{
+    color:#346fee;
+}
+
+
+.about-body{
+    margin-top: 10vh;
+    margin-left:15vw;
+    display: flex;
+    flex-direction: row;
+}
+.about-img{
+    width:450px;
+    height:600px;
+    border-radius: 15px;
+}
+
+
+.about-para{
+     width:600px;
+    padding-left: 100px;
+    height:700px;
+    font-size: 1.1rem;
+    color:black;
+    
+}
+
+.rooms-body{
+    display: flex;
+    flex-direction: row;
+    margin-left: 100px;
+   
+}
+.card1,.card2,.card3{
+   
+    margin:30px;
+    transition: transform 0.2s linear;
+    height: 550px;
+    width:80rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-right:50px;
+    
+}
+.card1:hover,.card2:hover,.card3:hover{
+    transform: scale(1.05,1.03);
+    cursor:pointer;
+    
+}
+
+.room-head{
+    color:black;
+  
+    
+    text-align: center;
+   
+}
+.room1-title,.room2-title,.room3-titlw{
+    font-size: 1.4rem;
+
+}
+.room1-text,.room2-text,.room3-text,.room-p{
+    font-size: 1.2rem;
+
+}
+
+.room1-button,.room2-button,.room3-button{
+    font-size: 1.1rem;
+    position: absolute;
+
+}
+.room-span{
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.service-body {
+    display: flex;
+    flex-wrap: wrap;
+    
+  
+}
+
+.service {
+    display: flex;
+    width: 75%;
+    margin-left:200px;
+    padding: 0;
+    margin-top: 90px;
+}
+
+.services {
+    flex: 1 1 65%; /* Makes each service take up 25% of the row */
+    box-sizing: border-box; /* Ensures padding and border are included in the width and height */
+    text-align: center; /* Centers the text within each service */
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(to right, #84fab0, #8fd3f4);
+     margin:20px;
+     height:170px;
+     width:200px/* Optional: Adds some padding for spacing */
+}
+
+.icon {
+  margin-top: 20px;
+    width: 75px; /* Adjust the size of the icons as needed */
+    height: 75px;
+    margin-bottom: 10px;/* Adds space between the icon and the text */
+   
+}
+.service-head{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    color:black;
+}
+
+
+.gallery-body {
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    flex-direction: column;
+   
+  }
+  
+  .galleries {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    
+  }
+  
+  .gallery {
+    display: flex;
+   
+  }
+  
+  .gallery img {
+    width: 22vw; /* Each image takes up 1/4th of the viewport width */
+    height: 17vw; /* Set height equal to width for square images */
+    object-fit: cover; 
+    padding: 5px;
+    cursor: zoom-in;
+    transition: transform 0.2s linear;/* Ensure images cover the area without distortion */
+  }
+
+
+  .gallery img:hover {
+    transform: scale(1.05,1.05);
+    opacity: 0.5; /* Zoom in by 10% */
+  }
+  .gallary-head{
+   
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+
+    color:black;
+
+}
+.about-img {
+  
+    background-color: #ccc;
+  /* Initially hidden */
+    
+  }
+  
+  
+  
+
+
+  
+  ul {
+    list-style-type: none;
+    padding: 0; /* Remove default padding */
+    margin: 0;  /* Remove default margin */
+}
+
+li {
+    padding: 20px;
+    text-align: left;
+    margin-left: 0; /* Ensure no left margin */
+}
+
+.contact {
+    margin-top: 80px;
+   
+    width: 1060px;
+    margin-left: auto; /* Center the contact div horizontally */
+    margin-right: auto; /* Center the contact div horizontal*/
+    display: flex;
+    flex-direction: row;
+    height:530px;
+
+}
+.contact-info{
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to bottom right, #a8e6cf, #dcedc1); 
+  width:600px;
+  
+}
+.contact-form{
+
+  background: linear-gradient(to bottom right, #ccffcc, #e6ffe6);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact div {
+    padding: 17px;
+}
+
+.contact-icons2 i {
+    padding: 20px;
+    margin: 5px;
+}
+input:not([type="button"]) {
+
+  width:250px;
+  padding: 10px;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    margin-top: 20px; /* Add space between elements */
+    resize: vertical; /* Allow only vertical resizing for textarea */
+    border: 1px solid #ccc; /* Optional: Add a border */
+    border-radius: 15px; /* Optional: Add rounded corners */
+    box-shadow: inset 5px 4px 8px rgba(242, 210, 210, 0.767); /* Inner shadow */
+}
+
+textarea{
+  width:500px;
+  height:150px;
+  padding: 10px;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    margin-top: 20px; /* Add space between elements */
+    resize: vertical; /* Allow only vertical resizing for textarea */
+    border: 1px solid #ccc; /* Optional: Add a border */
+    border-radius: 15px; /* Optional: Add rounded corners */
+    box-shadow: inset 5px 4px 8px rgba(242, 210, 210, 0.767); /* Inner shadow */
+}
+ul span{
+  margin-left: 25px;
+}
+.contact-info h2{
+  font-size: 30px;
+  margin-left: 30px;
+}
+.contact-info p{
+  margin-left: 30px;
+  font-size: 20px;
+
+}
+
+.contact-icons1{
+
+  font-size:20px;
+
+}
+.contact-icons2{
+ margin-left: 55px;
+
+}
+
+
+.contact-button{
+
+  box-shadow: inset 5px 4px 8px rgba(108, 126, 242, 0.767); /* Inner shadow */
+    margin-top: 15px;
+    font-size: 1.1rem;
+    height:40px;
+    background-color:#0552f9;
+    color:white;
+    border-radius: 15px;
+    width:150px;
+    border: 2px solid white;
+
+}
+input:focus,textarea:focus{
+  border: 1px solid white;
+  outline: none;
+
+}
+.map{
+  margin-top:50px;
+  border:1px solid  #346fee
+}
+.about-address{
+  color:#346fee;
+  font-size: 1.5rem;
+  width:400px;
+}
+.foot-links{
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  font-family:Arial, Helvetica, sans-serif;
+}
+.ql-a,.os-a,.cu-a,.kgh-a{
+text-decoration: none;
+color:white;
+opacity: 0.5;
+font-size: 15px;
+
+
+}
+.ql-a:hover,.os-a:hover,.cu-a:hover,.kgh-a:hover{
+
+  opacity: 1;
+  
+}  
+.foot-links h3{
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+.kgh,.os,.ql,.cu{
+  width:300px;
+  color:white;
+  margin: 20px;
+  margin-top: 80px;
+
+}
+
+.foot-button{
+  color:white;
+  background-color: #346fee;
+  height:40px;
+  border-radius: 5px;
+}
+
+.kgh{
+  margin-left: 120px;
+}
+
+.kgh p{
+  color: white;
+  opacity: 0.5;
+  font-size: 15px;
+}
+
+.y-img,.f-img,.t-img,.i-img{
+  width:27px;
+  height:27px;
+  padding:0px;
+  margin:0px 7px;
+  border-radius: 5px;
+  
+}
+
+
+
+
+
+@media (max-width: 990px) {
+  .mynav{
+   
+    font-size: 0.8rem;
+    width:125%;
+    
+  }
+ 
+  
+
+ 
+  .home-button{
+    width:120px;
+    height:40px;
+    margin-right:420px;
+  
+  }
+  .nav-item{
+    padding:20px;
+    margin:0px;
+    
+  }
+  body{
+   width:100%;
+ overflow-x: hidden;
+ 
+  }
+  .home-body{
+    width:125%;
+    background-size: 100% 100%;
+    background-position: fixed;
+  }
+ .about-img{
+  margin-top: 40px;
+  height:650px;
+  width:500px;
+
+
+ }
+ .about-body{
+
+  height:130%;
+
+ }
+ .about-para{
+  margin-right:80px;
+  width:650px;
+ }
+
+ .card1,.card2,.card3{
+  width:500rem;
+  height:500px;
+  margin:10px;
+  margin-right: 50px;
+ }
+.rooms{
+  width:110%;
+  margin-left:80px;
+}
+ .cu{
+  margin-right: 200px;
+ }
+ .foot-links h3{
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+.kgh,.os,.ql,.cu{
+  width:300px;
+  color:white;
+  margin: 25px;
+  margin-top: 80px;
+  
+}
+  
+}
+
+
+
+
+@media only screen and (max-width:992px){
+
+
+.para1{
+  font-size:1.1rem;
+  opacity: 0.8;
+  text-align: center;
+  margin-right:70px;
+  margin-top: 100px;
+}
+.home-para h1{
+  font-size: 1.7rem;
+  margin-right:70px;
+
+}
+.about-body {
+  flex-direction: column;
+  align-items: center;
+  margin-right: 0;
+}
+.about-head{
+  font-size: 2.5rem;
+}
+
+.about-img {
+
+  margin-right: 40px;
+  width:300px;
+  height:600px;
+}
+
+
+.about-para {
+
+  width: 400px;
+  margin-left: 0px;
+  margin-right: 150px;
+  height:auto;
+}
+.about-address{
+  margin-left: 0px;
+  width:320px;
+  height:auto;
+ 
+}
+.about-head {
+  width: 300px;
+ 
+}
+
+.rooms {
+  margin-top: 350px;
+  width: 100%;
+ overflow-x: hidden;
+margin-left: 10px;
+}
+
+.rooms-body {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  margin-left: 0px;
+  
+}
+.room-head{
+  font-size:2.5rem;
+ 
+  font-weight: bold;
+}
+
+.card1, .card2, .card3 {
+  width: 700px;
+  margin-bottom: 20px;
+  margin-right: 0px;
+  margin-left: 0px;/* Adds space between cards */
+}
+
+.custom-card-width {
+  max-width: 300px; /* Adjust this value to control the width of the cards */
+}
+
+.service-head{
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 120px;
+}
+  .service-body {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 0px;
+    
+   
+    
+}
+
+.service {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+   
+    padding: 0;
+    margin-top: 40px;
+    justify-content: center;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.services {
+    flex: 1 1 30%; /* Each service takes 50% width */
+    box-sizing: border-box;
+    text-align: center;
+     height:150px;
+    justify-content: center;
+    max-width:160px;
+    margin-right: 0px;
+  
+}
+
+.icon {
+  width:60px;
+  height: 60px;
+  
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  margin-right: 0;
+  font-size: 12px;
+  
+}
+
+.gallery img {
+  flex: 0 0 48%; /* Each image takes about half of the container width */
+  margin: 0.5%;
+  width:140px;
+  height:140px; /* Add a small margin to create spacing between images */
+}
+.gallary-head{
+  width:100%;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+ 
+}
+.contact{
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  margin-right: 0;
+  margin-left: 10px;
+  width: 100%;
+
+}
+  .contact-info{
+    border-radius: 15px;
+   font-size: 1rem;
+    width: 100%;
+
+  }
+  
+  .phone{
+    width:120%;
+  }
+  .mail{
+    width:140%;
+  }
+  .contact-form{
+    margin-top: 20px;
+  }
+  .contact-form div{
+    margin:1px;
+
+  }
+  .msg{
+    max-width:300px;
+    height:200px;
+  }
+  .foot-links{
+    
+max-width:100%;
+
+
+
+  }
+  .foot-links div{
+    margin:3px;
+    
+   
+  }
+  .foot-links div h3{
+    font-size:12px;
+  }
+  .foot-links div p a{
+    font-size: 12px;
+  }
+  .f-img,.y-img,.t-img,.i-img{
+    width:20px;
+    height: 20px;
+    margin:4px;
+  }
+  .copy{
+    font-size:12px;
+  }
+  .foot-button{
+    height: 50px;
+  }
+  .nav-data{
+    margin:4px;
+    padding: 4px;
+    
+
+  }
+  .nav-item{
+    padding:2px;
+  }
+  .nav-items{
+    background-color: rgb(151, 239, 160);
+    width:auto;
+    position: fixed; /* Keeps it in the same position while scrolling */
+  top:40px;      /* Distance from the top of the viewport */
+      /* Distance from the right of the viewport */
+  /* Ensures it stays above other elements */
+  /* Optional styling */
+  border: none;    /* Optional styling */
+  padding: 10px;   /* Optional styling */
+  border-radius: 5px; /* Optional styling */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional styling */
+  transition: left 0.5 ease;
+}
+
+  }
+ .nav-tog{
+  color:white;
+  width:50px;
+  height: 50px;
+  background-color: rgb(255, 255, 255);
+
+ }
+ .mynav{
+  flex-direction: column;
+  position: relative;
+  border-radius: 15px;
+ }
+
+
+
+ 
+
